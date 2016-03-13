@@ -1,6 +1,7 @@
 from pelican import signals
 from pelican.contents import Content, Article
 from bs4 import BeautifulSoup
+from six import text_type
 
 def images_extraction(instance):
     representativeImage = None
@@ -18,7 +19,7 @@ def images_extraction(instance):
             i.extract()
         if len(images) > 0:
             # set _summary field which is based on metadata. summary field is only based on article's content and not settable
-            instance._summary = unicode(soup)
+            instance._summary = text_type(soup)
         
         # If there are no image in summary, look for it in the content body
         if not representativeImage:
