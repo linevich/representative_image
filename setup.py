@@ -8,5 +8,5 @@ setup(name='representative_image',
       author='',
       author_email='',
       url='',
-      packages=['representative_image',],
+      packages=['',],
      )
