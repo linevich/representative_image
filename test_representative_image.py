@@ -13,7 +13,7 @@ TEST_CUSTOM_IMAGE_URL = 'https://testimage.com/custom.jpg'
 
 
 from pelican.contents import Article
-import representative_image
+from .representative_image import representative_image
 
 class TestRepresentativeImage(unittest.TestCase):
 
