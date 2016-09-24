@@ -1,1 +1,1 @@
-from .representative_image.representative_image import *
+from .representative_image import *
